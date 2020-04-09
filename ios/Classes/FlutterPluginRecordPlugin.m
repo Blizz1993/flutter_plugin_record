@@ -160,6 +160,11 @@
     [_channel invokeMethod:@"onPlay" arguments:dict3];
 }
 
+- (void) stopPlay{
+	NSLog(@"ios stop play voice");
+	[DPAudioPlayer.sharedInstance stopPlaying];
+}
+
 
 @end
 
