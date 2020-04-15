@@ -51,6 +51,8 @@
         [self play ];
     }else if([@"playByPath" isEqualToString:method]){
          [self playByPath];
+    else if([@"stopPlay" isEqualToString:method]){
+         [self stopPlay];
     }else{
       result(FlutterMethodNotImplemented);
     }
